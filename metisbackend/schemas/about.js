@@ -1,11 +1,16 @@
 export default {
-	name: 'navbar',
-	title: 'Navbar',
+	name: 'about',
+	title: 'About',
 	type: 'document',
 	fields: [
 		{
 			name: 'icon',
 			title: 'Icon Name',
+			type: 'string'
+		},
+		{
+			name: 'title',
+			title: 'Title Name',
 			type: 'string'
 		},
 		{

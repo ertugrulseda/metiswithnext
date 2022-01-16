@@ -1,6 +1,6 @@
 export default {
-	name: 'home',
-	title: 'Home',
+	name: 'layout',
+	title: 'Layout',
 	type: 'document',
 	fields: [
 		{

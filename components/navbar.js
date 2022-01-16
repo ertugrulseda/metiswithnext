@@ -2,7 +2,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/Navbar.module.css';
 import { useRef } from 'react';
-const Navbar = () => {
+
+
+  export default function Navbar () {
+
 	const mainpage = useRef(null);
 	const production = useRef(null);
 	const products = useRef(null);
@@ -63,7 +66,7 @@ const Navbar = () => {
 				</Link>
 			</div>
 			<nav className={styles.nav}>
-				<ul className={styles.navlist}>
+				<ul className={styles.navlist}>             
 					<li className={styles.navlistitem}>
 						<Link href="/">
 							<a onClick={() => clicked('mainpage')}>
@@ -130,8 +133,11 @@ const Navbar = () => {
 						</Link>
 					</li>
 				</ul>
-			</nav>
+			</nav>	
 		</header>
 	);
 };
-export default Navbar;
+
+
+
+
