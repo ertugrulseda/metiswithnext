@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import { sanityClient, urlFor } from '../lib/sanity';
-const navbarItemsQuery = `*[_type=="navbar" && isActive==true]{
+const navbarItemsQuery = `*[_type=="home" && isActive==true]{
 	_id,
 	icon,
 	image,
@@ -10,23 +10,20 @@ const navbarItemsQuery = `*[_type=="navbar" && isActive==true]{
   }`;
 
 
-  export default function Home ( {navbarItems }) {
+  export default function Home ( {homeItems }) {
 	return (
 		<div>
            {
-		     navbarItems?.length>0 &&
-		     navbarItems.map((item)=>(
-			 <h1>{item.title}</h1>
-			)
+		     homeItems?.length>0 &&
+		     homeItems.map((item)=>(
+			 <h1>{item.title}</h1>)
 	      )
 	     }
-		</div>
-	 
-	
+		</div>	
 	);
 }
 export async function getStaticProps() {
-	const navbarItems = await sanityClient.fetch(navbarItemsQuery);
+	const homeItems = await sanityClient.fetch(navbarItemsQuery);
 	debugger;
-	return { props: { navbarItems } };
+	return { props: { homeItems } };
 }
