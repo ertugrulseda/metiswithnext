@@ -1,0 +1,15 @@
+.productionwrapper{
+    display: flex;
+    align-items: ;
+    /* grid-template-columns: auto auto ; */
+  
+    padding: 10px;
+}
+
+.griditem{
+  /* border-style: solid; */
+  padding-top: 15px;
+}
+.history{
+    border-style: solid;
+}
