@@ -14,7 +14,6 @@ import { useRef } from 'react';
 
 	const clicked = (page) => {
 		console.log('clicked');
-		debugger;
 		//seçilen spanın rengini değiştir
 		if (page === 'mainpage') {
 			mainpage.current.style.color = '#ffbb05';

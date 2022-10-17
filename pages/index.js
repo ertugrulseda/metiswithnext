@@ -26,7 +26,7 @@ export default function Home({ homeItems }) {
 				aria-label="Home Page Images"
 			>
 				{homeItems.map((item) => (
-					<SplideSlide>
+					<SplideSlide id={item._id}>
 						<img src={urlFor(item.image).url()} className={styles.sliderimage} />
 					</SplideSlide>
 				))}

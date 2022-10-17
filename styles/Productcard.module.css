@@ -1,0 +1,6 @@
+.productwrapper{
+    display: flex;
+    align-items: center; 
+    border-style: solid;
+    border-color: black;
+}

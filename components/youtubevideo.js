@@ -7,7 +7,7 @@ export default class YoutubeVideo extends React.Component {
 			height: '440',
 			width: '440',
 			playerVars: {
-				autoplay: 1
+				autoplay: 0
 			}
 		};
 

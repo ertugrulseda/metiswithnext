@@ -20,7 +20,7 @@ export default createSchema({
     home,
     about,
     contact,
-    production,
+    // production,
     products,
 
   ]),
