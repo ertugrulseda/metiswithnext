@@ -1,7 +1,7 @@
 import { sanityClient, urlFor } from '../lib/sanity';
 import ProductCard from '../components/productcard';
-import styles from '../styles/Product.module.css';
-const productItemsQuery = `*[_type=="products" && isActive==true] {
+import styles from '../styles/Products.module.css';
+const productItemsQuery = `*[_type=="products" && isActive==true]  {
 	_id,
 	icon,
 	image,
@@ -9,7 +9,15 @@ const productItemsQuery = `*[_type=="products" && isActive==true] {
   }`;
 
 export default function Products({ productItems }) {
-	return <div>{productItems.map((item) => <img src={urlFor(item.image).url()} className={styles.image} />)}</div>;
+	return (
+		<div className={styles.productswrapper}>
+			{productItems.map((item) => (
+				<ProductCard>	
+					<img src={urlFor(item.image).url()} className={styles.image} />
+				</ProductCard>
+			))}
+		</div>
+	);
 }
 
 export async function getStaticProps() {

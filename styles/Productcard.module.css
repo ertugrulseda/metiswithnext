@@ -1,6 +1,28 @@
-.productwrapper{
-    display: flex;
-    align-items: center; 
-    border-style: solid;
-    border-color: black;
+.productcardwrapper{  
+    display: block;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+  
+    /* overflow: hidden; */
+   
+}
+
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    75% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
