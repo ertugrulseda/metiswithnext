@@ -1,0 +1,13 @@
+.form {
+    display: grid;
+    grid-template-areas: 
+    ' adsoyad adsoyad adsoyad mail mail mail'
+    ' message message message message message message'
+    ' buton buton buton buton buton buton';
+  
+}
+
+.item1 { grid-area: adsoyad; }
+.item2 { grid-area: mail; }
+.item3 { grid-area: message; }
+.item4 { grid-area: buton; }

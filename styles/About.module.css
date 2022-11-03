@@ -6,7 +6,15 @@
 }
 
 .griditem{
-    font-size: 30px;
+    /* font-size: 30px; */
     text-align: center;
-    border-style: solid;
+    /* border-style: solid; */
+}
+
+.paragraph{
+    /* font-size: 14px;
+    color: #5a5a5a;
+    font-weight: 300;
+    line-height: 25px; */
+    margin: 10px;
 }

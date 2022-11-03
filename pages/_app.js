@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import Layout from '../components/layout';
 
-function MyApp({ Component, pageProps }) {
+function Metis({ Component, pageProps }) {
 	return (
 		<div>
 			<Layout>
@@ -11,4 +11,4 @@ function MyApp({ Component, pageProps }) {
 	);
 }
 
-export default MyApp;
+export default Metis;
