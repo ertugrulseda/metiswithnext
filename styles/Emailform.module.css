@@ -10,6 +10,9 @@
 
 .item1 {
     grid-area: adsoyad;
+   
+}
+.textarea{
     color: #aaa;
     background-color: #f4f4f4;
     border: none;
@@ -20,22 +23,10 @@
 
 .item2 {
     grid-area: mail;
-    color: #aaa;
-    background-color: #f4f4f4;
-    border: none;
-    outline: none;
-    border-radius: 0;
-    box-shadow: none;
 }
 
 .item3 {
     grid-area: message;
-    color: #aaa;
-    background-color: #f4f4f4;
-    border: none;
-    outline: none;
-    border-radius: 0;
-    box-shadow: none;
     width: 585px;
     height: 184px;
 }
