@@ -1,13 +1,93 @@
 .form {
     display: grid;
-    grid-template-areas: 
-    ' adsoyad adsoyad adsoyad mail mail mail'
-    ' message message message message message message'
-    ' buton buton buton buton buton buton';
-  
+    grid-template-areas:
+        ' adsoyad adsoyad adsoyad mail mail mail'
+        ' message message message message message message'
+        ' buton buton buton buton buton buton';
+    gap: 10px;
+
 }
 
-.item1 { grid-area: adsoyad; }
-.item2 { grid-area: mail; }
-.item3 { grid-area: message; }
-.item4 { grid-area: buton; }
+.item1 {
+    grid-area: adsoyad;
+    color: #aaa;
+    background-color: #f4f4f4;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.item2 {
+    grid-area: mail;
+    color: #aaa;
+    background-color: #f4f4f4;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.item3 {
+    grid-area: message;
+    color: #aaa;
+    background-color: #f4f4f4;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+    width: 585px;
+    height: 184px;
+}
+
+.item4 {
+    grid-area: buton;
+    background-color: #ffbb05;
+    border: none;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+}
+
+
+.item4::after,
+.item4::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transition: .5s;
+}
+
+.item4::after {
+    top: -9px;
+    left: -9px;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+   
+}
+
+.item4::before {
+    bottom: -9px;
+    right: -9px;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.item4:hover { 
+    font-weight:bold;
+}
+
+.item4:hover::after,
+.item4:hover::before {
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    border-color: #ffbb05;
+    /* border-style: ridge;
+    */
+}
