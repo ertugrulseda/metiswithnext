@@ -45,7 +45,7 @@ export default function About({ aboutItems }) {
 	);
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 	const aboutItems = await sanityClient.fetch(aboutItemsQuery);
 	return { props: { aboutItems } };
 }

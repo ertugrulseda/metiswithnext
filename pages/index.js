@@ -34,7 +34,7 @@ export default function Home({ homeItems }) {
 		</div>
 	);
 }
-export async function getStaticProps() {
+export async function getServerSideProps() {
 	const homeItems = await sanityClient.fetch(navbarItemsQuery);
 	return { props: { homeItems } };
 }

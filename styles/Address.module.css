@@ -1,0 +1,8 @@
+.wp{
+    display: flex;
+    align-items: center;
+}
+
+.wpNumber {
+    margin-left: 5px;
+}

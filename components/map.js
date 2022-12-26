@@ -11,7 +11,7 @@ const Map = () => {
 				aria-hidden="false"
 				tabindex="0"
 			/>
-			<Address/>
+			<Address />
 		</div>
 	);
 };

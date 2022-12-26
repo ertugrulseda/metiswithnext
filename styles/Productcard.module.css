@@ -1,28 +1,16 @@
 .productcardwrapper{  
-    display: block;
+    display: flex;
+    align-items: center;
     background-color: #fff;
     border: 1px solid #dee2e6;
     border-radius: 0.25rem;
-  
-    /* overflow: hidden; */
-   
+    margin: 5px;
+    height: 250px; 
+    width: 250px;
+    overflow: hidden;
+    position: relative;
 }
 
 
-@keyframes scaleUp {
-    0% {
-        transform: scale(1);
-    }
 
-    25% {
-        transform: scale(1.2);
-    }
 
-    75% {
-        transform: scale(0.9);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
