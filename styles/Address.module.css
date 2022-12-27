@@ -1,8 +1,13 @@
 .wp{
     display: flex;
     align-items: center;
+
 }
 
 .wpNumber {
     margin-left: 5px;
+}
+.socialmediaicons{
+  margin-top: 10px;
+  margin-right: 15px;
 }

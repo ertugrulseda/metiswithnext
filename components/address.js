@@ -4,7 +4,7 @@ import styles from '../styles/Address.module.css';
 
 export const Address = () => {
 	return (
-		<div>
+		<div >
 			<div>Adres: 2 Nolu Sanayi sitesi 14.Blok No:53 </div>
 			<div>Biga / Çanakkale</div>
 			<div>Mail : info@metisyay.com</div>
@@ -14,10 +14,16 @@ export const Address = () => {
 				<Image src="/whatsapp.svg" width={24} height={24} />
 				<span className={styles.wpNumber}>0544 404 88 98</span>
 			</div>
-			<div>
-				<Image src="/facebook.svg" width={48} height={48} />
-				<Image src="/youtube.svg" width={48} height={48} />
-				<Image src="/instagram.svg" width={48} height={48} />
+			<div  className={styles.socialmediaicons} >
+				<a href="https://www.facebook.com/metis.yaybiga" target="_blank" rel="noreferrer">
+					<Image src="/facebook.svg" width={48} height={48} />
+				</a>
+				<a href="https://www.youtube.com/@met-iscelikyay2781" target="_blank" rel="noreferrer">
+					<Image src="/youtube.svg" width={48} height={48} />
+				</a>
+				<a href="https://www.instagram.com/metis.yay/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noreferrer">
+					<Image src="/instagram.svg" width={48} height={48} />
+				</a>
 			</div>
 		</div>
 	);
