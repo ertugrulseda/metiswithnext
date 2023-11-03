@@ -1,5 +1,6 @@
 import styles from '../styles/About.module.css';
 import { sanityClient, urlFor } from '../lib/sanity';
+import Image from 'next/image'
 const aboutItemsQuery = `*[_type=="about" && isActive==true] | order(icon asc){
 	_id,
 	icon,
@@ -11,7 +12,7 @@ export default function About({ aboutItems }) {
 		<div>
 			<div className={styles.gridcontainer}>
 				<div className={styles.griditem}>
-					<img src={urlFor(aboutItems[0].image).url()} />
+					<Image src={urlFor(aboutItems[0].image).url()} />
 				</div>
 				<div className={styles.griditem}>
 					<h4>BİZ KİMİZ?</h4>
