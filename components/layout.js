@@ -11,7 +11,6 @@ const Layout = ({ children }) => {
 				<Navbar />
 				<main className={styles.main}>{children}</main>
 				<footer>design by</footer>
-			
 		</div>
 	);
 };
