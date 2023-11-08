@@ -12,7 +12,9 @@ export default function About({ aboutItems }) {
 		<div>
 			<div className={styles.gridcontainer}>
 				<div className={styles.griditem}>
-					<Image src={urlFor(aboutItems[0].image).url()} />
+					<Image src={urlFor(aboutItems[0].image).url()} width={"400px"}
+						height={"300px"}
+						alt="author" />
 				</div>
 				<div className={styles.griditem}>
 					<h4>BİZ KİMİZ?</h4>
@@ -39,7 +41,9 @@ export default function About({ aboutItems }) {
 					</p>
 				</div>
 				<div className={styles.griditem}>
-					<img src={urlFor(aboutItems[1].image).url()} />
+					<Image src={urlFor(aboutItems[1].image).url()}  width={"640px"}
+						height={"480px"}
+						alt="yay" />
 				</div>
 			</div>
 		</div>

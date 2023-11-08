@@ -16,20 +16,27 @@ const navbarItemsQuery = `*[_type=="home" && isActive==true] | order(title asc){
 export default function Home({ homeItems }) {
 	return (
 		<div className={styles.content}>
-			<Splide 
+			<Splide
 				options={{
 					rewind: true,
 					width: '80vw',
 					perPage: 1,
-				
+
 				}}
-				aria-label="Home Page Images"
-			>
-				{homeItems.map((item) => (
-					<SplideSlide id={item._id}>
-						<img src={urlFor(item.image).url()} className={styles.sliderimage} />
-					</SplideSlide>
-				))}
+				aria-label="Home Page Images">
+				{homeItems.map((item) => {
+					console.log(urlFor(item.image).url())
+					return (<SplideSlide id={item._id}>
+						<div className={styles.sliderimage}>
+							<Image src={urlFor(item.image).url()}
+								width={"969px"}
+								height={"356px"}
+								alt="author"
+							/>
+						</div>
+
+					</SplideSlide>)
+				})}
 			</Splide>
 		</div>
 	);

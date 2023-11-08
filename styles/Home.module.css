@@ -1,10 +1,7 @@
-.content {
-    /* border-style: solid;
-    border-color: red; */
-  
-}
 
 .sliderimage {
-  
-    padding: 5% 5% 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
