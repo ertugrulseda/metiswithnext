@@ -17,7 +17,7 @@ const productItemsQuery = `*[_type=="products" && isActive==true
 export default function Products({ productItems }) {
 	const [modalOpen, setModalOpen] = useState(false);
 	const [url, setUrl] = useState("");
-
+	
 
 	const handleClick = (e) => {
 		const urlRegex = /url=([^&]+)/;
@@ -72,19 +72,6 @@ export default function Products({ productItems }) {
 	);
 }
 
-/* const MyImage = ({ src, alt, onClick }) => {
-	const [imageLoaded, setImageLoaded] = useState(false);
-	const handleOnLoad = () => {
-		setImageLoaded(true);
-	};
-
-	return (
-		<div style={{ position: 'relative', width: '100%', height: '100%' }}>
-			<Image src={src} width={"250px"} height={"250px"} alt={alt} />
-			{!imageLoaded && <ImageLoader />}
-		</div>
-	);
-}; */
 
 
 export async function getServerSideProps() {

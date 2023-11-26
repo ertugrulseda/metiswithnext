@@ -58,7 +58,7 @@ import { useRef } from 'react';
 				<Link href="/">
 					<a onClick={() => clicked('mainpage')}>
 						<div>
-							<Image src="/LogoKucuk.svg" width={200} height={92} />
+							<Image src="/LogoKucuk.svg" width={200} height={92} alt="metiş-logo"/>
 						</div>
 						<span className={styles.span}>Hayata Esneklik Katıyoruz</span>
 					</a>
@@ -70,7 +70,7 @@ import { useRef } from 'react';
 						<Link href="/">
 							<a onClick={() => clicked('mainpage')}>
 								<div className={styles.imgdiv}>
-									<Image src="/home-icon.svg" width={50} height={50} />
+									<Image src="/home-icon.svg" width={50} height={50} alt="metiş-ana-sayfa"/>
 								</div>
 								<span ref={mainpage} className={styles.span}>
 									{' '}
@@ -83,7 +83,7 @@ import { useRef } from 'react';
 						<Link href="/production">
 							<a onClick={() => clicked('production')}>
 								<div className={styles.imgdiv}>
-									<Image src="/projects-icon.svg" width={50} height={50} />
+									<Image src="/projects-icon.svg" width={50} height={50} alt="metiş-projeler"/>
 								</div>
 								<span ref={production} className={styles.span}>
 									{' '}
@@ -96,7 +96,7 @@ import { useRef } from 'react';
 						<Link href="/products">
 							<a onClick={() => clicked('products')}>
 								<div className={styles.imgdiv}>
-									<Image src="/featured-icon.svg" width={50} height={50} />
+									<Image src="/featured-icon.svg" width={50} height={50} alt="metiş-ürünler" />
 								</div>
 								<span ref={products} className={styles.span}>
 									{' '}
@@ -109,7 +109,7 @@ import { useRef } from 'react';
 						<Link href="/about">
 							<a onClick={() => clicked('about')}>
 								<div className={styles.imgdiv}>
-									<Image src="/about-icon.svg" width={50} height={50} />
+									<Image src="/about-icon.svg" width={50} height={50} alt="metiş-hakkımızda"/>
 								</div>
 								<span ref={about} className={styles.span}>
 									{' '}
@@ -122,7 +122,7 @@ import { useRef } from 'react';
 						<Link href="/contact">
 							<a onClick={() => clicked('contact')}>
 								<div className={styles.imgdiv}>
-									<Image src="/contact-icon.svg" width={50} height={50} />
+									<Image src="/contact-icon.svg" width={50} height={50} alt="metiş-iletişim"/>
 								</div>
 								<span ref={contact} className={styles.span}>
 									{' '}

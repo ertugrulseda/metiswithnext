@@ -14,7 +14,7 @@ export default function About({ aboutItems }) {
 				<div className={styles.griditem}>
 					<Image src={urlFor(aboutItems[0].image).url()} width={"400px"}
 						height={"300px"}
-						alt="author" />
+						alt="yönetim-kurulu-başkanı" />
 				</div>
 				<div className={styles.griditem}>
 					<h4>BİZ KİMİZ?</h4>

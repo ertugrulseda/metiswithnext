@@ -31,7 +31,7 @@ export default function Home({ homeItems }) {
 							<Image src={urlFor(item.image).url()}
 								width={"969px"}
 								height={"356px"}
-								alt="author"
+								alt={item.title}
 							/>
 						</div>
 

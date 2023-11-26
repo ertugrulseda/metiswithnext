@@ -1,5 +1,6 @@
 .container{
     display: flex;
+    
 }
 .div {
     flex: 1;
