@@ -15,7 +15,7 @@ const navbarItemsQuery = `*[_type=="home" && isActive==true] | order(title asc){
 
 export default function Home({ homeItems }) {
 	return (
-		<div className={styles.content}>
+		<div className={styles.content} key={""}>
 			<Splide
 				options={{
 					rewind: true,
@@ -26,7 +26,7 @@ export default function Home({ homeItems }) {
 				aria-label="Home Page Images">
 				{homeItems.map((item) => {
 					console.log(urlFor(item.image).url())
-					return (<SplideSlide id={item._id}>
+					return (<SplideSlide id={item._id} key={item._id}>
 						<div className={styles.sliderimage}>
 							<Image src={urlFor(item.image).url()}
 								width={"969px"}
