@@ -8,8 +8,8 @@ export const Address = () => {
 			<div>Adres: 2 Nolu Sanayi sitesi 14.Blok No:53 </div>
 			<div>Biga / Çanakkale</div>
 			<div>Mail : info@metisyay.com</div>
-			<div>Telefon: (0286)316 27 38 - (0286)317 01 59 </div>
-			<div> GSM : 0542 316 27 38 - 0532 432 98 70 </div>
+			<div>Telefon: (0286) 316 27 38 - (0286) 317 01 59 </div>
+			<div> GSM : 0542 316 27 38 </div>
 			<div className={styles.wp}>
 				<Image src="/whatsapp.svg" width={24} height={24} alt="metis-whatsapp" />
 				<span className={styles.wpNumber}>0544 404 88 98</span>
