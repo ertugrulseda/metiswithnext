@@ -5,8 +5,13 @@ import Emailform from '../components/emailform';
 const Contact = () => {
 	return (
 		<div className={styles.contactcontainer}>
-			<Map />		
-			<Emailform  />
+			<Map />	
+			{
+				/*
+				<Emailform  />
+				*/
+			}	
+			
 		</div>
 	);
 };
